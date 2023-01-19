@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+
+    <title>GCP essentials</title>
+</head>
+<body>
+   
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/gcp-images.jpeg" class="d-block w-100" alt="GCP pic">
+          </div>
+          <div class="carousel-item">
+            <img src="img/gcp-images-2-1024x576.jpeg" class="d-block w-100" alt="GCP pic">
+          </div>
+          <div class="carousel-item">
+            <img src="img/gcp-images-3-1024x576.jpeg" class="d-block w-100" alt="GCP pic">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap");
+
+  :root {
+    --lightblue: rgb(219, 248, 254);
+    --midblue: rgb(43, 147, 178);
+    --midblue_translucent: rgba(43, 147, 178, 0.8);
+    --darkblue: rgb(5, 37, 114);
+    --darkblue_translucent: rgba(5, 37, 114, 0.5);
+    --darkestblue: #112533;
+    --darkestblue_translucent: #112533f5;
+    --darkestblue_translucent_2: #112533bf;
+  }
+
+  footer * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  footer {
+    min-height: 350px;
+    background: #112533f5;
+    display: flex;
+  }
+
+  .footerleft {
+    width: 75vw;
+  }
+
+  .footerleftcontainer {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .footerlogo {
+    display: flex;
+  }
+
+  .footerlogo .logo1 {
+    width: 45px;
+    float: left;
+    margin-bottom: 20px;
+  }
+
+  .footerlogo div {
+    width: 2px;
+    height: 45px;
+    background: white;
+    margin: 0 25px 0 25px;
+  }
+
+  .footerlogo .logo2 {
+    width: 150px;
+    height: 100%;
+    float: left;
+  }
+
+  .footerdiv {
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+  }
+
+  .footercontent h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: left;
+  }
+
+  .footercontent p {
+    font-family: "Roboto", sans-serif;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 14px;
+  }
+
+  .joinieeebutton {
+    background: var(--midblue);
+    font-size: 18px;
+    font-family: "Baloo Da 2", cursive;
+    border-radius: 26px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 3px 30px 3px 30px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+    float: left;
+  }
+
+  .joinieeebutton:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  .footerright iframe {
+    margin: 40px 0 10px 0;
+  }
+
+  .footerright h6 {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  .fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  @media (max-width: 1024px) {
+    .footerright iframe {
+      width: 200px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    footer {
+      flex-direction: column;
+    }
+
+    .footerleft {
+      width: 100%;
+    }
+
+    .footerdiv {
+      display: none;
+    }
+
+    .footercontent h2,
+    .footercontent p {
+      text-align: center;
+    }
+
+    .footerlogo {
+      justify-content: center;
+    }
+
+    .joinieeebutton {
+      float: none;
+    }
+
+    .footerright {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footerright iframe {
+      order: 3;
+      width: 75vw;
+      margin-bottom: 30px;
+    }
+  }
+</style>
+<footer>
+  <div class="footerleft">
+    <div class="footerleftcontainer">
+      <div class="footerlogo">
+        <img
+          src="img/ieee-logo-white-round-bg-large.png"
+          alt="IEEE Logo"
+          class="logo1"
+        />
+        <div></div>
+        <img src="img/ieee-mb-white-png.png" alt="IEEE Logo 2" class="logo2" />
+      </div>
+      <div class="footerdiv">&lt/&gt</div>
+      <div class="footercontent">
+        <h2>About IEEE International​</h2>
+        <p>
+          IEEE and its members inspire a global community to innovate for a
+          better tomorrow through highly cited publications, conferences,
+          technology standards, and professional and educational activities.
+          IEEE is the trusted “voice” for engineering, computing, and technology
+          information around the globe.
+        </p>
+      </div>
+      <form
+        action="https://www.ieee.org/membership/join/index.html?WT.mc_id=hc_join"
+      >
+        <input
+          class="joinieeebutton"
+          type="submit"
+          value="Join IEEE International"
+        />
+      </form>
+    </div>
+  </div>
+  <div class="footerright">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d217788.5709781989!2d74.1296230328125!3d31.470659999999988!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391908a610715697%3A0xa58f8e89d5669a0e!2sLUMS%20-%20Lahore%20University%20of%20Management%20Sciences.!5e0!3m2!1sen!2sus!4v1661521641855!5m2!1sen!2sus"
+      width="250"
+      height="175"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <h6>Find IEEE LUMS</h6>
+    <div class="icons">
+      <a href="https://www.facebook.com/ieeelums" class="fa fa-facebook"></a>
+      <a href="https://twitter.com/ieeelums" class="fa fa-twitter"></a>
+      <a
+        href="https://www.youtube.com/channel/UCOv-BDFowI2fuVw2ihmc7vw"
+        class="fa fa-youtube"
+      ></a>
+      <a
+        href="https://www.instagram.com/ieee_lums/"
+        class="fa fa-instagram"
+      ></a>
+      <a
+        href="https://www.linkedin.com/company/ieee-lums-student-chapter/"
+        class="fa fa-linkedin"
+      ></a>
+    </div>
+    <h6 style="font-size: 15px">ieee@lums.edu.pk​</h6>
+  </div>
+</footer>
+
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
